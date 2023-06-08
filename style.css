@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600;700&display=swap');
+
+/* ------------ ROOT ------------ */
+
+:root {
+    font-family: 'Signika', sans-serif;
+    --primary_color_1: #EDE1C0;
+    --primary_color_2: #451D4F;
+    --primary_color_3: #5F902D;
+    --primary_color_4: #006633;
+    --secondary_color_1: #D4A600;
+    --secondary_color_2: #A63620;
+    font-size: 62.5%;
+}
+
+/* ------------ RESET CSS ------------ */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------ GLOBAL ------------ */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hr_container {
+    display: flex;
+    justify-content: center;
+}
+
+hr.rounded {
+    border-top: 5px solid var(--primary_color_1);
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.hr_container_bgmenu {
+    display: flex;
+    justify-content: left;
+}
+
+.header_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary_color_1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 1em;
+}
+
+#header_logo {
+    height: 4em;
+    margin: 1em 3em;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8rem 2rem 2rem;
+    gap: 2rem;
+}
+
+#cta_btn {
+    border-radius: 1em;
+    border: solid 3px var(--primary_color_3);
+    padding: 0.6em 1.3em;
+    background-color: transparent;
+    color: var(--primary_color_3);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.cta_btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+/* ------------ FONT ------------ */
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2em;
+    text-align: center;
+}
+
+.sub_title {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.sub_sub_title {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.sub_title_bgmenu {
+    font-size: 3.2em;
+    font-weight: 600;
+    color: var(--primary_color_1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.paragraph {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.paragraph_bgmenu {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: var(--primary_color_1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------ BURGER MENU ------------ */
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    display: block;
+    width: 100%;
+    background-color: var(--primary_color_1);
+    text-align: center;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.bg_icn {
+    width: 100%;
+}
+
+#burgermenu-logo {
+    height: 2em;
+    background-color: #000;
+}
+
+#ch {
+    display: none;
+}
+
+/* ------------ ICONE BURGER MENU ------------ */
+
+#hamburger {
+    display: none;
+}
+
+label.hamburger {
+    display: block;
+    background: var(--primary_color_1);
+    width: 40px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+input#hamburger {
+    display: none
+}
+
+.line {
+    border-radius: 1em;
+    position: absolute;
+    height: 6px;
+    width: 4em;
+    background: #000;
+    transition: 0.5s;
+}
+
+/* ------------ LINE STYLE ------------ */
+.line:nth-child(1) {
+    top: 12px;
+}
+
+.line:nth-child(2) {
+    top: 24px;
+}
+
+.line:nth-child(3) {
+    top: 36px;
+}
+
+/* ------------ ANIMATION ------------ */
+
+#ch:checked+#lab .line:nth-child(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+
+#ch:checked+#lab .line:nth-child(2) {
+    opacity: 0;
+}
+
+#ch:checked+#lab .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
+/* ------------ IMAGES ------------ */
+
+#btm_img_accueil {
+    height: 200px;
+    object-fit: cover;
+}
+
+#btm_img_carte {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 68%;
+}
+
+#btm_img_a_propos {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 68%;
+}
+
+#btm_img_contact {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 68%;
+}
+
+
+/* ------------ FOOTER ------------ */
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1rem solid #EDE1C0;
+    padding: 0rem 2rem 4rem;
+    gap: 4rem;
+    background: black;
+    color: #EDE1C0;
+}
+
+.footer_logo img {
+    width: 80%;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    padding: 2em 5em 0em;
+}
+
+.footer_container p {
+    text-align: center;
+    padding: 1em;
+}
+
+/* ------------ GRID ------------ */
+
+.grid_container {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+}
+
+.grid_container a {
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid_container .cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.grid_container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grid_container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list_footer {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+/* ------------ SUB BAR ------------ */
+
+.sub_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary_color_1);
+    border-radius: 1em;
+    height: 6rem;
+    padding: 1em;
+}
+
+.sub_bar input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#sub_btn {
+    border-radius: 1em;
+    border: solid 2px var(--primary_color_3);
+    padding: 1em;
+    background-color: transparent;
+    color: var(--primary_color_3);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+/* ------------ SOCIAL MEDIA ------------ */
+
+.social_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+}
+
+.social_media_icn {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+@media all and (max-width:960px) {
+
+    .menu_img_desktop {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .menu_details {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & .item {
+            width: 70%;
+        }
+
+        & .price {
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 6em;
+        left: 0;
+        right: 0;
+        height: auto;
+        transform: translate(-1000px, 0);
+        transition: all 0.8s ease;
+        background-color: #000;
+        gap: 3.5em;
+        padding: 4em 4em 18em 4em;
+        justify-content: space-around;
+    }
+
+    #burgermenu_logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 8em;
+        background-color: #000;
+    }
+
+    nav>a {
+        width: auto;
+        background-color: #000;
+        color: var(--primary_color_1);
+        text-align: start;
+        font-size: 2.4em;
+    }
+
+    #ch:checked+nav {
+        transform: translate(0, 0);
+        transition: all 0.8s ease;
+    }
+
+    #lab {
+        display: block;
+    }
+
+}
