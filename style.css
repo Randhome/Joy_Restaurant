@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600;700&display=swap');
 
+
+/* ------------------------------ */
 /* ------------ ROOT ------------ */
+/* ------------------------------ */
+
 
 :root {
     font-family: 'Signika', sans-serif;
@@ -13,7 +17,11 @@
     font-size: 62.5%;
 }
 
+
+/* ----------------------------------- */
 /* ------------ RESET CSS ------------ */
+/* ----------------------------------- */
+
 
 *,
 *::before,
@@ -23,48 +31,54 @@
     box-sizing: border-box;
 }
 
-/* ------------ GLOBAL ------------ */
 
-a {
-    text-decoration: none;
+/* ----------------------------------- */
+/* -------------- GLOBAL ------------- */
+/* ----------------------------------- */
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    color: var(--primary_color_1);
+    text-align: start;
+    font-size: 2.4em;
 }
 
 ul {
     list-style: none;
 }
 
-.hr_container {
-    display: flex;
-    justify-content: center;
+a {
+    text-decoration: none;
 }
 
-hr.rounded {
-    border-top: 5px solid var(--primary_color_1);
-    border-radius: 5px;
-    width: 15rem;
+p {
+    font-size: 1.6em;
+    font-weight: 300;
 }
 
-.hr_container_bgmenu {
-    display: flex;
-    justify-content: left;
-}
-
-.header_navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+label.hamburger {
+    display: block;
     background: var(--primary_color_1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0 0 0 1em;
+    width: 40px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
 }
 
-#header_logo {
-    height: 4em;
-    margin: 1em 3em;
+input#hamburger {
+    display: none
 }
 
+/* ----------------------------------- */
+/* -------------- CLASS -------------- */
+/* ----------------------------------- */
+
+.social_media_desktop {
+    display: none;
+}
 
 .content {
     display: flex;
@@ -74,23 +88,22 @@ hr.rounded {
     gap: 2rem;
 }
 
-#cta_btn {
-    border-radius: 1em;
-    border: solid 3px var(--primary_color_3);
-    padding: 0.6em 1.3em;
-    background-color: transparent;
-    color: var(--primary_color_3);
-    font-family: 'Signika', sans-serif;
-    font-size: 1.8em;
-    font-weight: 800;
+.eco_cult {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
-.cta_btn {
+.info_eco_cult {
     display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 1.2em;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.partenaire_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 /* ------------ FONT ------------ */
@@ -120,11 +133,6 @@ hr.rounded {
     margin-right: auto;
 }
 
-p {
-    font-size: 1.6em;
-    font-weight: 300;
-}
-
 .paragraph {
     font-size: 1.6em;
     font-weight: 300;
@@ -138,54 +146,82 @@ p {
     margin-right: auto;
 }
 
-/* ------------ BURGER MENU ------------ */
+.eco_color {
+    color: var(--primary_color_4);
+}
 
-nav {
+.culture_color {
+    color: var(--secondary_color_2);
+}
+
+.job_art {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--secondary_color_2);
+}
+
+.job_food {
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--primary_color_4);
+}
+
+/* ------------ BUTTON ------------ */
+
+.cta_btn {
     display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.2em;
 }
 
-nav>a {
-    display: block;
-    width: 100%;
-    background-color: var(--primary_color_1);
-    text-align: center;
-    box-sizing: border-box;
-    color: #000;
-    text-decoration: none;
-    transition: all 0.3s ease;
+/* ------------ NAV BAR ------------ */
+
+.header_navbar_desktop {
+    display: none;
 }
+
+.header_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary_color_1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 1em;
+}
+
+.nav_mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6em;
+    left: 0;
+    right: 0;
+    transform: translate(-1000px, 0);
+    transition: all 0.8s ease;
+    background-color: #000;
+    gap: 4em;
+    padding: 4em 3em 10em;
+}
+
+/* ------------ BURGER MENU ------------ */
 
 .bg_icn {
     width: 100%;
 }
 
-#burgermenu-logo {
-    height: 2em;
-    background-color: #000;
+.contact_informations {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
-#ch {
-    display: none;
-}
-
-/* ------------ ICONE BURGER MENU ------------ */
-
-#hamburger {
-    display: none;
-}
-
-label.hamburger {
-    display: block;
-    background: var(--primary_color_1);
-    width: 40px;
-    height: 60px;
-    position: relative;
-    cursor: pointer;
-}
-
-input#hamburger {
-    display: none
-}
+/* ------------ LINE STYLE ------------ */
 
 .line {
     border-radius: 1em;
@@ -196,7 +232,6 @@ input#hamburger {
     transition: 0.5s;
 }
 
-/* ------------ LINE STYLE ------------ */
 .line:nth-child(1) {
     top: 12px;
 }
@@ -209,45 +244,23 @@ input#hamburger {
     top: 36px;
 }
 
-/* ------------ ANIMATION ------------ */
+/* ------------ SPACER ------------ */
 
-#ch:checked+#lab .line:nth-child(1) {
-    transform: translateY(12px) rotate(-45deg);
+.hr_container {
+    display: flex;
+    justify-content: center;
 }
 
-#ch:checked+#lab .line:nth-child(2) {
-    opacity: 0;
+.hr_container_bgmenu {
+    display: flex;
+    justify-content: left;
 }
 
-#ch:checked+#lab .line:nth-child(3) {
-    transform: translateY(-12px) rotate(45deg);
+hr.rounded {
+    border-top: 5px solid var(--primary_color_1);
+    border-radius: 5px;
+    width: 15rem;
 }
-
-/* ------------ IMAGES ------------ */
-
-#btm_img_accueil {
-    height: 200px;
-    object-fit: cover;
-}
-
-#btm_img_carte {
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 68%;
-}
-
-#btm_img_a_propos {
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 68%;
-}
-
-#btm_img_contact {
-    height: 200px;
-    object-fit: cover;
-    object-position: 0 68%;
-}
-
 
 /* ------------ FOOTER ------------ */
 
@@ -320,7 +333,7 @@ input#hamburger {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary_color_1);
+    background: white;
     border-radius: 1em;
     height: 6rem;
     padding: 1em;
@@ -334,17 +347,6 @@ input#hamburger {
     font-family: 'Signika', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
-}
-
-#sub_btn {
-    border-radius: 1em;
-    border: solid 2px var(--primary_color_3);
-    padding: 1em;
-    background-color: transparent;
-    color: var(--primary_color_3);
-    font-family: 'Signika', sans-serif;
-    font-size: 1.3em;
-    font-weight: 800;
 }
 
 /* ------------ SOCIAL MEDIA ------------ */
@@ -363,18 +365,331 @@ input#hamburger {
     gap: 2em;
 }
 
+.menu_img_desktop {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.menu_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & .item {
+        width: 70%;
+    }
+
+    & .price {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+}
+
+
+/* ----------------------------------- */
+/* ---------------- ID --------------- */
+/* ----------------------------------- */
+
+#header_logo {
+    height: 4em;
+    margin: 1em 3em;
+}
+
+#cta_btn {
+    border-radius: 1em;
+    border: solid 3px var(--primary_color_3);
+    padding: 0.6em 1.3em;
+    background-color: transparent;
+    color: var(--primary_color_3);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+/* ------------ BURGER MENU ------------ */
+
+#burgermenu_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8em;
+    background-color: #000;
+}
+
+#ch {
+    display: none;
+}
+
+#ch:checked+nav {
+    transform: translate(0, 0);
+    transition: all 0.8s ease;
+}
+
+#lab {
+    display: block;
+}
+
+#menu_footer_desktop {
+    display: none;
+}
+
+/* ------------ ICONE BURGER MENU ------------ */
+
+#hamburger {
+    display: none;
+}
+
+
+/* ------------ IMAGES ------------ */
+
+#btm_img_accueil {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#btm_img_carte {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 0 68%;
+}
+
+#btm_img_a_propos {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 80% 0;
+}
+
+#btm_img_contact {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#img_Lucie_D {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+#img_Nicolas_R {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+#img_Martin_D {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+#img_Caroline_D {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 85%;
+}
+
+#img_top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* ------------ SUB BAR ------------ */
+
+#sub_btn {
+    border-radius: 1em;
+    border: solid 2px var(--primary_color_3);
+    padding: 1em;
+    background-color: transparent;
+    color: var(--primary_color_3);
+    font-family: 'Signika', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
 /* ------------ MEDIA QUERIES ------------ */
 
-@media all and (max-width:960px) {
 
-    .menu_img_desktop {
+@media only screen and (min-width: 768px) {
+
+    /* ------------ FOR DESKTOP ------------ */
+
+    /* DISPLAY NONE */
+
+    .header_navbar {
         display: none;
     }
 
-    .menu {
+    .cta_btn {
+        display: none;
+    }
+
+    #text_mobile {
+        display: none;
+    }
+
+    .grid_container {
+        display: none;
+    }
+
+    .footer_logo {
+        display: none;
+    }
+
+    .social_media {
+        display: none;
+    }
+
+    #last_spacer {
+        display: none;
+    }
+
+    /* GLOBAL */
+
+    .eco_cult {
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #EDE1C0;
+    }
+
+    /* CLASS */
+
+    .content {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        justify-content: center;
+        margin: 14rem 5rem 2rem;
+        gap: 5rem;
+    }
+
+    .desktop_nav {
+        display: flex;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .ul_desktop {
+        display: flex;
+        font-size: 2.4em;
+        gap: 2em;
+    }
+
+    .desktop_nav a:hover {
+        text-decoration: underline solid #006633 0.3em;
+        text-decoration-skip-ink: none;
+        text-underline-position: under;
+    }
+
+    .header_navbar_desktop {
+        background-color: #EDE1C0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 5em;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+    }
+
+    .header_navbar_desktop a {
+        color: #000;
+    }
+
+    .sub_bar {
+        width: 80em;
+    }
+
+    .footer_container {
+        align-items: center;
+        padding: 5em 0em;
+        gap: 10em;
+    }
+
+    .footer_container p {
+        padding: 0.2em 0;
+        text-align: left;
+    }
+
+
+    .footer_logo_desktop {
+        padding: 0em;
+    }
+
+    .footer_logo_desktop img {
+        margin: 5em;
+        scale: (0.6);
+    }
+
+    .title {
+        font-size: 5.2em;
+    }
+
+    .sub_sub_title {
+        font-size: 2em;
+    }
+
+    .h3_desktop {
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    .p_desktop {
+        font-size: 2.4em;
+        padding: none;
+    }
+
+    .sub_title {
+        font-size: 3.2em;
+    }
+
+    .paragraph {
+        font-size: 2.4em;
+    }
+
+    .social_media_desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .logo_joy_social_media {
+        scale: (0.6);
+    }
+
+    .menu_desktop {
+        display: flex;
+        justify-content: space-between;
+        gap: 3em;
+    }
+
+    .menu_img_desktop {
+        display: flex;
+        max-height: 30em;
+        width: 50%;
+        object-fit: cover;
     }
 
     .menu_details {
@@ -384,54 +699,118 @@ input#hamburger {
 
         & .item {
             width: 70%;
+            font-size: 2.4em;
         }
 
         & .price {
-            font-size: 1.6em;
+            font-size: 2.4em;
             font-weight: 700;
         }
     }
 
-
-    nav {
+    .info_eco_cult {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 6em;
-        left: 0;
-        right: 0;
-        height: auto;
-        transform: translate(-1000px, 0);
-        transition: all 0.8s ease;
-        background-color: #000;
-        gap: 3.5em;
-        padding: 4em 4em 18em 4em;
+        gap: 2em;
+        width: 50%;
+    }
+
+    .partenaire_info {
+        width: 50%;
+    }
+
+    /* ID */
+
+    #cta_btn_desktop {
+        border: solid #5F902D 0.1em;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        background: transparent;
+        font-family: 'Signika', sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        color: #5F902D;
+        max-height: 3em;
+    }
+
+    #cta_btn_desktop:hover {
+        background: #5F902D;
+        color: #EDE1C0;
+    }
+
+    #header_logo {
+        max-height: 3em;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    #img_top {
+        max-height: 100rem;
+        object-fit: cover;
+    }
+
+    #btm_img_accueil {
+        max-height: 40rem;
+        object-fit: cover;
+    }
+
+    #btm_img_carte {
+        max-height: 40rem;
+        object-fit: cover;
+        object-position: 0 68%;
+    }
+
+    #btm_img_a_propos {
+        max-height: 40rem;
+        object-fit: cover;
+        object-position: 80% 10%;
+    }
+
+    #btm_img_contact {
+        max-height: 40rem;
+        object-fit: cover;
+    }
+
+    #social_media_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu_footer_desktop {
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+    }
+
+    #card_partenaire {
+        display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 
-    #burgermenu_logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 8em;
-        background-color: #000;
+    #img_Lucie_D {
+        max-height: 300px;
+        width: 500px;
+        object-fit: cover;
     }
 
-    nav>a {
-        width: auto;
-        background-color: #000;
-        color: var(--primary_color_1);
-        text-align: start;
-        font-size: 2.4em;
+    #img_Nicolas_R {
+        max-height: 300px;
+        width: 500px;
+        object-fit: cover;
+        order: 2;
     }
 
-    #ch:checked+nav {
-        transform: translate(0, 0);
-        transition: all 0.8s ease;
+    #img_Martin_D {
+        max-height: 300px;
+        width: 500px;
+        object-fit: cover;
     }
 
-    #lab {
-        display: block;
+    #img_Caroline_D {
+        max-height: 300px;
+        width: 500px;
+        object-fit: cover;
+        order: 2;
     }
-
 }

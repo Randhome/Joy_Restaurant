@@ -11,6 +11,26 @@
 
 <body>
     <header>
+
+        <!-- DESKTOP NAV -->
+
+        <div class="header_navbar_desktop">
+
+            <nav class="desktop_nav">
+                <a href="/index.html"><img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo"></a>
+                <ul class="ul_desktop">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/cartes.html">Carte</a></li>
+                    <li><a href="/a_propos.html">A propos</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.thefork.fr/restaurant/le-joy-r3214" target="_blank"><button
+                    id="cta_btn_desktop">Réserver</button></a>
+        </div>
+
+        <!-- MOBILE NAV -->
+
         <div class="header_navbar">
             <label for="ch" id="lab">
                 <span class="line"></span>
@@ -18,7 +38,7 @@
                 <span class="line"></span>
             </label>
             <input type="checkbox" id="ch">
-            <nav>
+            <nav class="nav_mobile">
                 <img src="/Images/Logo_Crème_Sans_Baseline.png" alt="logo JOY" id="burgermenu_logo">
                 <a href="/index.html">Accueil</a>
                 <div class="hr_container_bgmenu">
@@ -45,16 +65,15 @@
                 </div>
                 <p class="paragraph_bgmenu">Joy, 2023 - Tous droits réservés</p>
             </nav>
-            <img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo">
+            <a href="/index.html"><img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo"></a>
         </div>
     </header>
     <div class="content">
         <h1 class="title">Notre carte</h1>
-        <img src="./Images/incrustation_menu_JOY.jpg" alt="Photo du menu du restaurant JOY">
+        <img src="./Images/incrustation_menu_JOY.jpg" alt="Photo du menu du restaurant JOY" id="img_top">
         <h2 class="sub_title">Apéritifs</h2>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
+            <img src="/Images/img_apéritifs.jpg" alt="photo représentant des apéritifs" class="menu_img_desktop">
             <div class="menu">
                 <div class="menu_details">
                     <p class="item">Coupe de champagne (12cl)</p>
@@ -78,9 +97,7 @@
             <hr class="rounded">
         </div>
         <h2 class="sub_title">Entrées</h2>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
             <div class="menu">
                 <div class="menu_details">
                     <p class="item ">Pain à l'ail et salade</p>
@@ -100,14 +117,14 @@
                     <p class="price">4.50 euros</p>
                 </div>
             </div>
+            <img src="/Images/img_entrées.jpg" alt="photo représentant des entrées" class="menu_img_desktop">
         </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
         <h2 class="sub_title">Plats</h2>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
+            <img src="/Images/img_plats.jpg" alt="photo représentant des entrées" class="menu_img_desktop">
             <div class="menu">
                 <div class="menu_details">
                     <p class="item ">Tornedos de filet de boeuf grillé, sauce au poivre et légumes du moment</p>
@@ -127,9 +144,7 @@
             <hr class="rounded">
         </div>
         <h2 class="sub_title">Desserts</h2>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
             <div class="menu">
                 <div class="menu_details">
                     <p class="item ">Assortiment de fromage</p>
@@ -148,15 +163,15 @@
                     <p class="price">3.00 euros</p>
                 </div>
             </div>
+            <img src="/Images/img_desserts.jpg" alt="photo représentant des entrées" class="menu_img_desktop">
         </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
         <h2 class="sub_title">Boissons</h2>
         <h3 class="sub_sub_title">Boissons froides :</h3>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
+            <img src="/Images/img_boissons_froides.jpg" alt="photo représentant des entrées" class="menu_img_desktop">
             <div class="menu">
                 <div class="menu_details">
                     <p class="item ">Détox au gingembre</p>
@@ -173,9 +188,8 @@
             </div>
         </div>
         <h3 class="sub_sub_title">Boissons chaudes :</h3>
-        <div class="">
-            <img src="/Images/photo-1517248135467-4c7edcad34c4.avif" alt="photo représentant des entrées"
-                class="menu_img_desktop">
+        <div class="menu_desktop">
+
             <div class="menu">
                 <div class="menu_details">
                     <p class="item ">Expresso</p>
@@ -194,6 +208,7 @@
                     <p class="price">2.40 euros</p>
                 </div>
             </div>
+            <img src="/Images/imb_boissons_chaudes.jpg" alt="photo représentant des entrées" class="menu_img_desktop">
         </div>
         <div class="hr_container">
             <hr class="rounded">
@@ -202,18 +217,22 @@
             <button onclick="window.location.href='https://www.thefork.fr/restaurant/le-joy-r3214';"
                 id="cta_btn">Réserver</button>
         </div>
-        <div class="hr_container">
+        <div class="hr_container" id="last_spacer">
             <hr class="rounded">
         </div>
         <img src="./Images/img_bottom_carte.jpg" alt="Saumon à l'orange" id="btm_img_carte">
     </div>
 
     <footer>
+
+        <!-------------- MOBILE FOOTER -------------->
+
         <div class="footer_container">
             <div class="footer_logo">
                 <img src="./Images/Logo_Crème_Sans_Baseline.png" alt="logo_JOY">
             </div>
-            <p class="label">Pour réserver une table ou pour toute question, appelez nous au 01.23.45.67.89 ou
+            <p class="paragraph" id="text_mobile">Pour réserver une table ou pour toute question, appelez nous au
+                01.23.45.67.89 ou
                 envoyez nous un e-mail
                 à contact@joy-restaurant.fr</p>
 
@@ -224,14 +243,14 @@
 
             <div class="grid_container">
                 <div class="cell">
-                    <h2><a href="/index.html">Accueil</a></h2>
+                    <h2 class="sub_title"><a href="/index.html">Accueil</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Le restaurant</a></li>
                         <li><a href="#">Le concept</a></li>
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/cartes.html">Carte</a></h2>
+                    <h2 class="sub_title"><a href="/cartes.html">Carte</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Apéritifs</a></li>
                         <li><a href="#">Entrées</a></li>
@@ -241,7 +260,7 @@
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/a_propos.html">A propos</a></h2>
+                    <h2 class="sub_title"><a href="/a_propos.html">A propos</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Joy & l'écologie</a></li>
                         <li><a href="#">Joy & la culture</a></li>
@@ -249,7 +268,7 @@
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/contact.html">Contact</a></h2>
+                    <h2 class="sub_title"><a href="/contact.html">Contact</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Adresse</a></li>
                         <li><a href="#">Coordonnées</a></li>
@@ -257,6 +276,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="social_media">
                 <div>
                     <h2 class="sub_title">Rejoignez nous !</h2>
@@ -267,6 +287,51 @@
                     <a href="#"><img src="./Images/icon_facebook.svg" alt="social_media_facebook"></a>
                 </div>
             </div>
+
+            <!-------------- DESKTOP FOOTER -------------->
+
+            <div id="social_media_menu">
+                <div class="social_media_desktop">
+                    <img src="./Images/Logo_Crème_Sans_Baseline.png" alt="logo_JOY" class="logo_joy_social_media">
+                    <div>
+                        <h2 class="sub_title">Rejoignez nous !</h2>
+                    </div>
+                    <div class="social_media_icn_desktop">
+                        <a href="#"><img src="./Images/icon_instagram.svg" alt="social_media_instagram"></a>
+                        <a href="#"><img src="./Images/icon_linkedin.svg" alt="social_media_linkedin"></a>
+                        <a href="#"><img src="./Images/icon_facebook.svg" alt="social_media_facebook"></a>
+                    </div>
+                </div>
+                <div id="menu_footer_desktop">
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/index.html">Accueil</a></h3>
+                        <p class="p_desktop">Le restaurant</p>
+                        <p class="p_desktop">Le restaurant</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/cartes.html">Notre carte</a></h3>
+                        <p class="p_desktop">Apéritifs</p>
+                        <p class="p_desktop">Entrées</p>
+                        <p class="p_desktop">Plats</p>
+                        <p class="p_desktop">Desserts</p>
+                        <p class="p_desktop">Boissons</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/a_propos.html">A propos</a></h3>
+                        <p class="p_desktop">Joy & l'écologie</p>
+                        <p class="p_desktop">Joy & la culture</p>
+                        <p class="p_desktop">Partenaires</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/contact.html">Contact</a></h3>
+                        <p class="p_desktop">Adresse</p>
+                        <p class="p_desktop">Coordonnées</p>
+                        <p class="p_desktop">Horaires</p>
+                    </div>
+                </div>
+            </div>
+
+
             <p class="paragraph">Joy, 2023 - Tous droits réservés</p>
         </div>
     </footer>

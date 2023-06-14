@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Joy - Accueil</title>
+    <title>Le Joy - A propos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+
+        <!-- DESKTOP NAV -->
+
+        <div class="header_navbar_desktop">
+
+            <nav class="desktop_nav">
+                <a href="/index.html"><img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo"></a>
+                <ul class="ul_desktop">
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li><a href="/cartes.html">Carte</a></li>
+                    <li><a href="/a_propos.html">A propos</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.thefork.fr/restaurant/le-joy-r3214" target="_blank"><button
+                    id="cta_btn_desktop">Réserver</button></a>
+        </div>
+
+        <!-- MOBILE NAV -->
+
         <div class="header_navbar">
             <label for="ch" id="lab">
                 <span class="line"></span>
@@ -18,7 +38,7 @@
                 <span class="line"></span>
             </label>
             <input type="checkbox" id="ch">
-            <nav>
+            <nav class="nav_mobile">
                 <img src="/Images/Logo_Crème_Sans_Baseline.png" alt="logo JOY" id="burgermenu_logo">
                 <a href="/index.html">Accueil</a>
                 <div class="hr_container_bgmenu">
@@ -45,12 +65,12 @@
                 </div>
                 <p class="paragraph_bgmenu">Joy, 2023 - Tous droits réservés</p>
             </nav>
-            <img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo">
+            <a href="/index.html"><img src="/Images/Logo_NB_Avec_Baseline.png" alt="logo JOY" id="header_logo"></a>
         </div>
     </header>
     <div class="content">
         <h1 class="title">A propos</h1>
-        <img src="./Images/photo-1517248135467-4c7edcad34c4.avif" alt="intérieur du restaurant">
+        <img src="./Images/img_top_a_propos.jpg" alt="Equipe du restaurant en train de travailler" id="img_top">
         <h2 class="sub_title">Le concept</h2>
         <p class="paragraph">Le Joy est né en septembre 2022 en pleine crise de Covid-19. Notre ambition est de prendre
             part à la
@@ -65,73 +85,129 @@
         <div class="hr_container">
             <hr class="rounded">
         </div>
-        <h2 class="sub_title">Le JOY et l'écologie</h2>
-        <p class="paragraph">Chez Joy, nous sommes fiers d'être des défenseurs de l'environnement. Nous nous
-            approvisionnons en produits locaux et de saison autant que possible, ce qui permet de réduire notre
-            empreinte carbone.</p>
+        <div class="eco_cult">
+            <div class="info_eco_cult">
+                <h2 class="sub_title">Le JOY et <span class="eco_color">l'écologie</span></h2>
+                <p class="paragraph">Chez Joy, nous sommes fiers d'être des défenseurs de l'environnement. Nous nous
+                    approvisionnons en produits locaux et de saison autant que possible, ce qui permet de réduire notre
+                    empreinte carbone.</p>
 
-        <p class="paragraph">Nous travaillons avec des fournisseurs locaux qui partagent notre engagement envers le
-            commerce éco-conscient et la durabilité. De plus, nous faisons également attention au gaspillage alimentaire
-            en recyclant et en compostant les déchets alimentaires.</p>
-        <div class="hr_container">
-            <hr class="rounded">
+                <p class="paragraph">Nous travaillons avec des fournisseurs locaux qui partagent notre engagement envers
+                    le
+                    commerce éco-conscient et la durabilité. De plus, nous faisons également attention au gaspillage
+                    alimentaire
+                    en recyclant et en compostant les déchets alimentaires.</p>
+            </div>
+            <div class="hr_container" id="last_spacer">
+                <hr class="rounded">
+            </div>
+            <div class="info_eco_cult">
+                <h2 class="sub_title">Le JOY et <span class="culture_color">la culture</span></h2>
+                <p class="paragraph">Nous voulons également rendre la culture accessible à tous, c'est pourquoi nous
+                    organisons
+                    régulièrement des événements gratuits ou à prix réduit pour permettre à chacun de découvrir la
+                    culture
+                    sous
+                    toutes ses formes.</p>
+
+                <p class="paragraph">Nous sommes également passionnés par la culture et organisons des événements pour
+                    la
+                    rendre
+                    accessible au
+                    plus grand nombre. Rejoignez nous chez Joy pour découvrir une cuisine responsable et délicieuse.</p>
+            </div>
         </div>
-        <h2 class="sub_title">Le JOY et la culture</h2>
-        <p class="paragraph">Nous voulons également rendre la culture accessible à tous, c'est pourquoi nous organisons
-            régulièrement des événements gratuits ou à prix réduit pour permettre à chacun de découvrir la culture sous
-            toutes ses formes.</p>
-
-        <p class="paragraph">Nous sommes également passionnés par la culture et organisons des événements pour la rendre
-            accessible au
-            plus grand nombre. Rejoignez nous chez Joy pour découvrir une cuisine responsable et délicieuse.</p>
         <div class="hr_container">
             <hr class="rounded">
         </div>
         <h1 class="title">Nos partenaires</h1>
-        <img src="./Images/Lucie_DESCHAMPS.jpg" alt="photo Lucie DESCHAMPS">
-        <h2 class="sub_title">Lucie DESCHAMPS</h2>
-        <h2 class="sub_title">Artiste céramiste</h2>
-        <p class="paragraph">Lucie Deschamps est une artiste céramiste talentueuse qui fournit à Joy des pièces uniques
-            pour notre décoration intérieure. Nous aimons travailler avec Lucie car elle partage notre passion pour
-            l'authenticité et la qualité. Ses œuvres en céramique ajoutent une touche de raffinement à notre ambiance
-            chaleureuse et accueillante. Nous sommes fiers de soutenir les artistes locaux comme Lucie car nous croyons
-            que la culture est un élément essentiel de notre communauté.</p>
+        <div id="card_partenaire">
+            <img src="./Images/Lucie_DESCHAMPS.jpg" alt="photo Lucie DESCHAMPS" id="img_Lucie_D">
+            <div class="partenaire_info">
+                <div>
+                    <h2 class="sub_title">Lucie DESCHAMPS</h2>
+                    <h2 class="job_art">Artiste céramiste</h2>
+                </div>
+                <p class="paragraph">Lucie Deschamps est une artiste céramiste talentueuse qui fournit à Joy des pièces
+                    uniques
+                    pour notre décoration intérieure. Nous aimons travailler avec Lucie car elle partage notre passion
+                    pour
+                    l'authenticité et la qualité. Ses œuvres en céramique ajoutent une touche de raffinement à notre
+                    ambiance
+                    chaleureuse et accueillante. Nous sommes fiers de soutenir les artistes locaux comme Lucie car nous
+                    croyons
+                    que la culture est un élément essentiel de notre communauté.</p>
+            </div>
+        </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
-        <img src="./Images/saumon_by_CA_Creative.jpg" alt="photo Lucie DESCHAMPS">
-        <h2 class="sub_title">Nicolas ROUSSEAU</h2>
-        <h2 class="sub_title">Viticulteur</h2>
-        <p class="paragraph">Nicolas Rousseau est un viticulteur passionné qui fournit à Joy des vins exceptionnels
-            provenant de petits producteurs locaux. Nous avons choisi de travailler avec Nicolas car il partage notre
-            engagement envers la qualité et l'authenticité. Ses vins sont produits de manière artisanale, avec une
-            attention particulière accordée aux détails, ce qui se reflète dans leur goût exceptionnel. Nous sommes
-            fiers de travailler avec Nicolas car il nous fournit des vins qui se marient parfaitement avec notre cuisine
-            potagère française et notre carte flexivore.</p>
+        <div id="card_partenaire">
+            <img src="./Images/Nicolas_ROUSSEAU.jpg" alt="photo Nicolas ROUSSEAU" id="img_Nicolas_R">
+            <div class="partenaire_info">
+                <div>
+                    <h2 class="sub_title">Nicolas ROUSSEAU</h2>
+                    <h2 class="job_food">Viticulteur</h2>
+                </div>
+                <p class="paragraph">Nicolas Rousseau est un viticulteur passionné qui fournit à Joy des vins
+                    exceptionnels
+                    provenant de petits producteurs locaux. Nous avons choisi de travailler avec Nicolas car il partage
+                    notre
+                    engagement envers la qualité et l'authenticité. Ses vins sont produits de manière artisanale, avec
+                    une
+                    attention particulière accordée aux détails, ce qui se reflète dans leur goût exceptionnel. Nous
+                    sommes
+                    fiers de travailler avec Nicolas car il nous fournit des vins qui se marient parfaitement avec notre
+                    cuisine
+                    potagère française et notre carte flexivore.</p>
+            </div>
+        </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
-        <img src="./Images/saumon_by_CA_Creative.jpg" alt="photo Lucie DESCHAMPS">
-        <h2 class="sub_title">Martin DUPONT</h2>
-        <h2 class="sub_title">Artisan boucher</h2>
-        <p class="paragraph">Martin Dupont est un artisan boucher passionné qui fournit à Joy des viandes de qualité
-            exceptionnelle provenant de producteurs locaux. Nous avons choisi de travailler avec Martin car il partage
-            notre engagement envers le commerce éco-conscient et la durabilité. Martin s'approvisionne auprès de
-            producteurs locaux qui respectent les normes en matière de bien-être animal, ce qui se reflète dans la
-            qualité exceptionnelle de sa viande. Nous sommes fiers de travailler avec Martin car il nous fournit des
-            ingrédients de qualité supérieure qui sont essentiels à la réussite de notre carte flexivore.</p>
+        <div id="card_partenaire">
+            <img src="./Images/Martin_DUPONT.jpg" alt="photo Martin DUPONT" id="img_Martin_D">
+            <div class="partenaire_info">
+                <div>
+                    <h2 class="sub_title">Martin DUPONT</h2>
+                    <h2 class="job_food">Artisan boucher</h2>
+                </div>
+                <p class="paragraph">Martin Dupont est un artisan boucher passionné qui fournit à Joy des viandes de
+                    qualité
+                    exceptionnelle provenant de producteurs locaux. Nous avons choisi de travailler avec Martin car il
+                    partage
+                    notre engagement envers le commerce éco-conscient et la durabilité. Martin s'approvisionne auprès de
+                    producteurs locaux qui respectent les normes en matière de bien-être animal, ce qui se reflète dans
+                    la
+                    qualité exceptionnelle de sa viande. Nous sommes fiers de travailler avec Martin car il nous fournit
+                    des
+                    ingrédients de qualité supérieure qui sont essentiels à la réussite de notre carte flexivore.</p>
+            </div>
+        </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
-        <img src="./Images/saumon_by_CA_Creative.jpg" alt="photo Lucie DESCHAMPS">
-        <h2 class="sub_title">Caroline DUBOIS</h2>
-        <h2 class="sub_title">Agricultrice bio</h2>
-        <p class="paragraph">Caroline Dubois est une agricultrice bio passionnée qui fournit des légumes de saison et de
-            qualité supérieure à Joy. Nous sommes fiers de travailler avec Caroline car elle partage notre engagement
-            envers une agriculture responsable et durable. Ses légumes sont cultivés sans produits chimiques, ce qui
-            permet de préserver la biodiversité et de réduire l'impact environnemental. Caroline est une partenaire
-            essentielle de Joy car elle nous fournit des ingrédients frais et locaux qui sont la base de notre cuisine
-            potagère française.</p>
+        <div id="card_partenaire">
+            <img src="./Images/Caroline DUBOIS.jpg" alt="photo Caroline DUBOIS" id="img_Caroline_D">
+            <div class="partenaire_info">
+                <div>
+                    <h2 class="sub_title">Caroline DUBOIS</h2>
+                    <h2 class="job_food">Agricultrice bio</h2>
+                </div>
+                <p class="paragraph">Caroline Dubois est une agricultrice bio passionnée qui fournit des légumes de
+                    saison
+                    et de
+                    qualité supérieure à Joy. Nous sommes fiers de travailler avec Caroline car elle partage notre
+                    engagement
+                    envers une agriculture responsable et durable. Ses légumes sont cultivés sans produits chimiques, ce
+                    qui
+                    permet de préserver la biodiversité et de réduire l'impact environnemental. Caroline est une
+                    partenaire
+                    essentielle de Joy car elle nous fournit des ingrédients frais et locaux qui sont la base de notre
+                    cuisine
+                    potagère française.</p>
+            </div>
+        </div>
         <div class="hr_container">
             <hr class="rounded">
         </div>
@@ -139,18 +215,22 @@
             <button onclick="window.location.href='https://www.thefork.fr/restaurant/le-joy-r3214';"
                 id="cta_btn">Réserver</button>
         </div>
-        <div class="hr_container">
+        <div class="hr_container" id="last_spacer">
             <hr class="rounded">
         </div>
-        <img src="./Images/saumon_by_CA_Creative.jpg" alt="Spacer_HQ">
+        <img src="./Images/img_bottom_a_propos.jpg" alt="Spacer_HQ" id="btm_img_a_propos">
     </div>
 
     <footer>
+
+        <!-------------- MOBILE FOOTER -------------->
+
         <div class="footer_container">
             <div class="footer_logo">
                 <img src="./Images/Logo_Crème_Sans_Baseline.png" alt="logo_JOY">
             </div>
-            <p class="paragraph">Pour réserver une table ou pour toute question, appelez nous au 01.23.45.67.89 ou
+            <p class="paragraph" id="text_mobile">Pour réserver une table ou pour toute question, appelez nous au
+                01.23.45.67.89 ou
                 envoyez nous un e-mail
                 à contact@joy-restaurant.fr</p>
 
@@ -161,14 +241,14 @@
 
             <div class="grid_container">
                 <div class="cell">
-                    <h2><a href="/index.html">Accueil</a></h2>
+                    <h2 class="sub_title"><a href="/index.html">Accueil</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Le restaurant</a></li>
                         <li><a href="#">Le concept</a></li>
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/cartes.html">Carte</a></h2>
+                    <h2 class="sub_title"><a href="/cartes.html">Carte</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Apéritifs</a></li>
                         <li><a href="#">Entrées</a></li>
@@ -178,7 +258,7 @@
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/a_propos.html">A propos</a></h2>
+                    <h2 class="sub_title"><a href="/a_propos.html">A propos</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Joy & l'écologie</a></li>
                         <li><a href="#">Joy & la culture</a></li>
@@ -186,7 +266,7 @@
                     </ul>
                 </div>
                 <div class="cell">
-                    <h2><a href="/contact.html">Contact</a></h2>
+                    <h2 class="sub_title"><a href="/contact.html">Contact</a></h2>
                     <ul class="list_footer">
                         <li><a href="#">Adresse</a></li>
                         <li><a href="#">Coordonnées</a></li>
@@ -194,6 +274,7 @@
                     </ul>
                 </div>
             </div>
+
             <div class="social_media">
                 <div>
                     <h2 class="sub_title">Rejoignez nous !</h2>
@@ -204,6 +285,51 @@
                     <a href="#"><img src="./Images/icon_facebook.svg" alt="social_media_facebook"></a>
                 </div>
             </div>
+
+            <!-------------- DESKTOP FOOTER -------------->
+
+            <div id="social_media_menu">
+                <div class="social_media_desktop">
+                    <img src="./Images/Logo_Crème_Sans_Baseline.png" alt="logo_JOY" class="logo_joy_social_media">
+                    <div>
+                        <h2 class="sub_title">Rejoignez nous !</h2>
+                    </div>
+                    <div class="social_media_icn_desktop">
+                        <a href="#"><img src="./Images/icon_instagram.svg" alt="social_media_instagram"></a>
+                        <a href="#"><img src="./Images/icon_linkedin.svg" alt="social_media_linkedin"></a>
+                        <a href="#"><img src="./Images/icon_facebook.svg" alt="social_media_facebook"></a>
+                    </div>
+                </div>
+                <div id="menu_footer_desktop">
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/index.html">Accueil</a></h3>
+                        <p class="p_desktop">Le restaurant</p>
+                        <p class="p_desktop">Le restaurant</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/cartes.html">Notre carte</a></h3>
+                        <p class="p_desktop">Apéritifs</p>
+                        <p class="p_desktop">Entrées</p>
+                        <p class="p_desktop">Plats</p>
+                        <p class="p_desktop">Desserts</p>
+                        <p class="p_desktop">Boissons</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/a_propos.html">A propos</a></h3>
+                        <p class="p_desktop">Joy & l'écologie</p>
+                        <p class="p_desktop">Joy & la culture</p>
+                        <p class="p_desktop">Partenaires</p>
+                    </div>
+                    <div class="menu_card_desktop">
+                        <h3 class="h3_desktop"><a href="/contact.html">Contact</a></h3>
+                        <p class="p_desktop">Adresse</p>
+                        <p class="p_desktop">Coordonnées</p>
+                        <p class="p_desktop">Horaires</p>
+                    </div>
+                </div>
+            </div>
+
+
             <p class="paragraph">Joy, 2023 - Tous droits réservés</p>
         </div>
     </footer>
