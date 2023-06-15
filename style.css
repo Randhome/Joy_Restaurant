@@ -390,6 +390,12 @@ hr.rounded {
     font-weight: 700;
 }
 
+.contact_map {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 /* ----------------------------------- */
 /* ---------------- ID --------------- */
 /* ----------------------------------- */
@@ -573,6 +579,10 @@ hr.rounded {
         color: #EDE1C0;
     }
 
+    iframe {
+        width: 50%;
+    }
+
     /* CLASS */
 
     .content {
@@ -720,6 +730,12 @@ hr.rounded {
 
     .partenaire_info {
         width: 50%;
+    }
+
+    .contact_map {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* ID */
