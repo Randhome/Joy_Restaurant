@@ -379,23 +379,22 @@ hr.rounded {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    & .item {
-        width: 70%;
-    }
-
-    & .price {
-        font-size: 1.6em;
-        font-weight: 700;
-    }
 }
 
+.menu_details .item {
+    width: 70%;
+}
+
+.menu_details .price {
+    font-size: 1.6em;
+    font-weight: 700;
+}
 
 /* ----------------------------------- */
 /* ---------------- ID --------------- */
 /* ----------------------------------- */
 
-#header_logo {
+#header_logo_mobile {
     height: 4em;
     margin: 1em 3em;
 }
@@ -557,7 +556,7 @@ hr.rounded {
         display: none;
     }
 
-    #last_spacer {
+    .last_spacer {
         display: none;
     }
 
@@ -639,7 +638,6 @@ hr.rounded {
 
     .footer_logo_desktop img {
         margin: 5em;
-        scale: (0.6);
     }
 
     .title {
@@ -657,7 +655,7 @@ hr.rounded {
 
     .p_desktop {
         font-size: 2.4em;
-        padding: none;
+        padding: 0;
     }
 
     .sub_title {
@@ -668,6 +666,11 @@ hr.rounded {
         font-size: 2.4em;
     }
 
+    .social_media_icn_desktop {
+        display: flex;
+        gap: 2em;
+    }
+
     .social_media_desktop {
         display: flex;
         flex-direction: column;
@@ -676,7 +679,7 @@ hr.rounded {
     }
 
     .logo_joy_social_media {
-        scale: (0.6);
+        transform: scale(0.6);
     }
 
     .menu_desktop {
@@ -696,16 +699,16 @@ hr.rounded {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+    }
 
-        & .item {
-            width: 70%;
-            font-size: 2.4em;
-        }
+    .menu_details .item {
+        width: 70%;
+        font-size: 2.4em;
+    }
 
-        & .price {
-            font-size: 2.4em;
-            font-weight: 700;
-        }
+    .menu_details .price {
+        font-size: 2.4em;
+        font-weight: 700;
     }
 
     .info_eco_cult {
@@ -738,7 +741,7 @@ hr.rounded {
         color: #EDE1C0;
     }
 
-    #header_logo {
+    #header_logo_desktop {
         max-height: 3em;
         object-fit: cover;
         margin: 0;
@@ -782,7 +785,7 @@ hr.rounded {
         gap: 5em;
     }
 
-    #card_partenaire {
+    .card_partenaire {
         display: flex;
         justify-content: space-around;
         align-items: center;
